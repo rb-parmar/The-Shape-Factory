@@ -1,0 +1,75 @@
+@import url(./reset.css);
+
+body {
+  background-color: #1a1d28;
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.grid-main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.row {
+  height: 30px;
+  width: 610px;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  width: 200px;
+  border-radius: 7px;
+  padding: 0 5px;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.144);
+  transition: all 1s ease-in-out;
+}
+
+select:focus {
+  border: 0.1px solid  rgb(255, 255, 255, 0.144);
+}
+
+select option {
+  color: #000;
+  background-color: #cbcbcb;
+}
+
+button {
+  width: 100px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #ff833c;
+}
+
+.grid {
+  height: 510px;
+  margin-top: 25px;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255, 0.144);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 90px 90px 90px 90px 90px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.info {
+  color: #fff;
+  height: 30px;
+  width: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
